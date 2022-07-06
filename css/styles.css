@@ -1,0 +1,204 @@
+/* Основные цвета макета 
+Основной - черный color: #212121; 
+Вторичный - серый color: #757575; 
+Акцент - синий color: #2196F3;  
+Белый - #FFFFFF*/
+
+:root {
+ --primery-text-color:#212121;
+--title-text-color:#757575;
+--accent-color: #2196F3;
+}
+
+/* Основные шрифты */
+body {
+color: var(--primery-text-color);
+font-family: 'Roboto', sans-serif;
+letter-spacing: 0.03em;
+}
+
+a {
+color: var(--accent-color);
+}
+
+.list {
+list-style: none;
+}
+
+/* Cite nav */
+.site-nav {
+background-color: #FFFFFF;
+font-weight: 500;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.02em;
+}
+
+
+.link:hover,
+.link:focus {
+color: var(--accent-color);
+}
+
+.link {
+text-decoration: none;
+font-size: 14px;
+line-height: 1.14;
+font-family: inherit;
+}
+
+.site-nav
+.link.current
+{
+color: var(--accent-color);
+}
+
+.site {
+color: var(--primery-text-color);
+}
+
+.contacts {
+color: var(--title-text-color);
+}
+
+.logo {
+color: var(--accent-color);
+
+font-family: 'Raleway';
+font-weight: 700;
+font-size: 26px;
+line-height: 1.19;
+text-decoration: none;
+}
+
+.header {
+color: #000000;
+font-family: 'Raleway';
+font-weight: 700;
+font-size: 26px;
+line-height: 1.19;
+text-decoration: none;
+}
+
+/* Section main */
+
+.section-main {
+background: #2F303A;
+}
+
+.section-headline {
+color: #FFFFFF;
+font-weight: 900;
+font-size: 44px;
+line-height: 1.36;
+}
+
+/* Button */
+button:hover,
+button:focus {
+background-color: #188CE8;}
+
+.button {
+background-color: var(--accent-color);
+color:  #FFFFFF;
+font-family: inherit;
+font-weight: 700;
+font-size: 16px;
+line-height: 1.88;
+text-decoration: none;
+}
+
+/* Section desc*/
+.section-desc {
+background: #E5E5E5
+}
+
+.title-desc {
+font-weight: 700;
+font-size: 14px;
+line-height: 1.14;
+text-transform: uppercase;
+}
+
+.text-desc {
+color: var(--title-text-color);
+font-size: 14px;
+line-height: 1.71;
+}
+
+.subject {
+font-weight: 700;
+font-size: 36px;
+line-height: 1.17;
+text-align: center;
+}
+
+/* Section User */
+.section-user {
+background: #F5F4FA;
+}
+.title-user {
+font-weight: 500;
+font-size: 16px;
+line-height: 1.19;
+text-align: center;
+}
+
+.text-user {
+color: var(--title-text-color);
+font-size: 16px;
+line-height: 1.19;
+text-align: center;
+}
+
+/* Footer */
+address {
+font-style: normal;
+}
+
+.maps {
+color: #FFFFFF;
+}
+
+.footer {
+background-color: #2F303A;
+color: rgba(255, 255, 255, 0.6);
+}
+
+.logo-footer {
+color: #FFFFFF;
+}
+
+/*  PORTFOLIO */
+.portfolio-item {
+text-decoration: none;
+}
+
+.button,
+.style {
+color: #FFFFFF;
+background-color: var(--accent-color);
+}
+
+.current {
+color: var(--primery-text-color);
+background-color: #F5F4FA;
+font-weight: 500;
+font-size: 16px;
+line-height: 1.62;
+}
+
+.caption {
+color: var(--primery-text-color);
+
+font-weight: 700;
+font-size: 18px;
+line-height: 2;
+letter-spacing: 0.06em;
+}
+
+.text-site {
+color: var(--title-text-color);
+line-height: 1.88;
+letter-spacing: 0.03em;
+}
