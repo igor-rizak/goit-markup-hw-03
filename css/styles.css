@@ -72,23 +72,22 @@ color: var(--accent-color);
 .header-nav, .header-list { 
 display: flex;
 align-items: center;
+margin-left: auto;
 gap: 50px;
 }
 
 
-.logo-header {
+.logo-header-1 {
 color: #000000;
 font-family: 'Raleway';
 font-weight: 700;
 font-size: 26px;
 line-height: 1.19;
 text-decoration: none;
-}
 
-.logo-header {
-margin-right: 93px;
 padding-top: 25px;
 padding-bottom: 25px;
+padding-right: 93px;
 }
 
 
@@ -122,9 +121,9 @@ color: var(--accent-color);
 color: var(--accent-color);
 }
  
-.mail {
+/* .mail {
 margin-right: 50px;
-}
+} */
 
 .contacts {
 color: var(--title-text-color);
@@ -146,6 +145,7 @@ text-decoration: none;
 background: #2F303A;
 padding-top: 200px;
 padding-bottom: 200px;
+margin-bottom: 93px;
 }
 
 .section-headline {
@@ -153,9 +153,9 @@ color: #FFFFFF;
 font-weight: 900;
 font-size: 44px;
 line-height: 1.36;
-
 margin-right: auto;
 margin-left: auto;
+margin-bottom: 30px;
 text-align: center;
 letter-spacing: 0.06em;
 text-transform: uppercase;
@@ -188,13 +188,17 @@ padding: 10px 32px;
 /* Section desc*/
 
 .section-desc {
-padding-top: 94px;
+/* padding-top: 94px; */
 padding-bottom: 94px;
 }
 
 .content-desk {
 display: flex;
 gap: 30px;
+}
+
+.list-info {
+width: 370px;
 }
 
 .title-desc {
@@ -278,14 +282,13 @@ font-weight: 500;
 font-size: 16px;
 line-height: 1.19;
 text-align: center;
+margin-bottom: 10px;
 }
 
 .text-user {
 color: var(--title-text-color);
 line-height: 1.19;
 text-align: center;
-margin-bottom: 10px;
-
 }
 
 
@@ -310,7 +313,6 @@ color: #FFFFFF;
 .footer  {
 background-color: #2F303A;
 color: rgba(255, 255, 255, 0.6);
-display: flex;
 }
 
 .footer-wide {
@@ -331,14 +333,28 @@ gap: 30px;
 .section-portfolio {
 padding-top: 94px;
 padding-bottom: 94px;
+background: #FFFFFF;
 }
 
 
 /* BUTTON */
+
+.btn-list {
+border: none;
+margin-right: 8px;
+}
+
+.btn-list:last-child {
+margin-right: 0;
+}
+
 .button,
 .style {
 color: #FFFFFF;
 background-color: var(--accent-color);
+font-weight: 500;
+font-size: 16px;
+line-height: 1.62;
 }
 
 .current {
@@ -365,10 +381,7 @@ margin-bottom: 50px;
 justify-content: center;
 }
 
-.btn-portfolio {
-margin-right: auto;
-margin-left: auto;
-}
+
 
 .portfolio-picture {
 flex-basis: calc(100% / 3 -30px);
@@ -389,5 +402,10 @@ margin-bottom: 4px;
 color: var(--title-text-color);
 line-height: 1.88;
 letter-spacing: 0.03em;
-margin-bottom: 20px;
+}
+
+.portfolio-link {
+padding: 20px 24px;
+background: #FFFFFF;
+border: 1px solid #EEEEEE;
 }
