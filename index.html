@@ -24,16 +24,17 @@
   </head>
   <body>
     <!-- Навигация -->
-    <div class="container">
-      <header class="site-nav">
+    <header class="site-nav">
+      <div class="container">
         <nav class="header-nav">
-          <a href="/" class="logo">Web<span class="logo-header">Studio</span></a>
+          <a href="/" class="logo logo-header">Web<span class="logo-header">Studio</span></a>
           <ul class="link list header-list">
             <li><a href="index.html" class="link accent site">Студия</a></li>
             <li><a href="portfolio.html" class="link site">Портфолио</a></li>
             <li><a href="" class="link site">Контакты</a></li>
           </ul>
         </nav>
+        
         <!-- Контакты -->
         <ul class="list header-list">
           <li class="link">
@@ -43,8 +44,8 @@
             <a href="tel:+380961111111" class="link contacts">+38 096 111 11 11</a>
           </li>
         </ul>
-      </header>
-    </div>
+      </div>
+    </header>
     <!-- Герой-->
     <main>
       <!-- Эффективные решения для вашего бизнеса -->
@@ -56,7 +57,6 @@
       </section>
 
       <!-- Компетенции -->
-
       <section class="section-desc">
         <div class="container">
           <ul class="list content-desk">
@@ -88,8 +88,8 @@
         </div>
       </section>
       <!-- Чем мы занимаемся -->
-      <div class="container subject-img">
-        <section>
+      <section class="section-desc">
+        <div class="container subject-img">
           <h2 class="subject container">Чем мы занимаемся</h2>
           <ul class="list subject-list">
             <li class="subject-picture">
@@ -102,47 +102,55 @@
               <img src="./images/work/img_3.jpg" alt="Подбор цветовой гаммы" width="370" />
             </li>
           </ul>
-        </section>
-      </div>
+        </div>
+      </section>
+
       <!-- Наша команда -->
-      <div class="container">
-        <section class="section-user">
+      <section class="section-user">
+        <div class="container">
           <h2 class="subject">Наша команда</h2>
           <ul class="list user-container">
             <li class="user-picture">
               <img src="./images/team/igor.jpg" alt="Игорь Демьяненко" width="270" />
-              <h3 class="title-user">Игорь Демьяненко</h3>
-              <p lang="en" class="text-user">Product Designer</p>
+              <div class="user-name">
+                <h3 class="title-user">Игорь Демьяненко</h3>
+                <p lang="en" class="text-user">Product Designer</p>
+              </div>
             </li>
 
             <li class="user-picture">
               <img src="./images/team/olga.jpg" alt="Ольга Репина" width="270" />
-              <h3 class="title-user">Ольга Репина</h3>
-              <p lang="en" class="text-user">Frontend Developer</p>
+              <div class="user-name">
+                <h3 class="title-user">Ольга Репина</h3>
+                <p lang="en" class="text-user">Frontend Developer</p>
+              </div>
             </li>
 
             <li class="user-picture">
               <img src="./images/team/nikolay.jpg" alt="Николай Тарасов" width="270" />
-              <h3 class="title-user">Николай Тарасов</h3>
-              <p lang="en" class="text-user">Marketing</p>
+              <div class="user-name">
+                <h3 class="title-user">Николай Тарасов</h3>
+                <p lang="en" class="text-user">Marketing</p>
+              </div>
             </li>
 
             <li class="user-picture">
               <img src="./images/team/misha.jpg" alt="Михаил Ермаков" width="270" />
+              <div class="user-name"> 
               <h3 class="title-user">Михаил Ермаков</h3>
               <p lang="en" class="text-user">UI Designer</p>
             </li>
+            </div>
           </ul>
-        </section>
-      </div>
+        </div>
+      </section>
     </main>
     <!-- Футер -->
-    <footer class="footer">
-      <div class="container footer-list">
-        <div class="footer-slogan">
-          <a href="/" class="logo">Web<span class="logo-footer">Studio</span></a>
-        </div>
-        <address>
+    <footer class="footer footer-wide">
+      <div class="container">
+          <a href="/" class="logo footer-slogan">Web<span class="logo-footer">Studio</span></a>
+  
+         <address>
           <ul class="link list">
             <li class="footer-adress">
               <a
@@ -153,13 +161,14 @@
                 >г. Киев, пр-т Леси Украинки, 26</a
               >
             </li>
+
             <li class="footer-adress">
               <a class="link footer" href="mailto:info@example.com">info@example.com</a>
             </li>
             <li>
               <a class="link footer footer-adress" href="tel:+380991111111">+38 099 111 11 11</a>
             </li>
-          </ul>
+           </ul>
         </address>
       </div>
     </footer>
