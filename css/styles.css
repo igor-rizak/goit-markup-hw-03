@@ -67,29 +67,28 @@ border-bottom: 1px solid #ECECEC;
 color: var(--accent-color);
 }
 
-
 .site-nav .container,
 .header-nav, .header-list { 
 display: flex;
 align-items: center;
-margin-left: auto;
+}
+
+.header-list {
 gap: 50px;
 }
 
+.header-nav {
+margin-right: auto;
+}
 
-.logo-header-1 {
+.logo-header {
 color: #000000;
 font-family: 'Raleway';
 font-weight: 700;
 font-size: 26px;
 line-height: 1.19;
 text-decoration: none;
-
-padding-top: 25px;
-padding-bottom: 25px;
-padding-right: 93px;
 }
-
 
 .link {
 color: var(--title-text-color);
@@ -98,7 +97,6 @@ font-size: 14px;
 line-height: 1.14;
 font-family: inherit;
 }
-
 
 .site,
 .mail,
@@ -138,6 +136,12 @@ line-height: 1.19;
 text-decoration: none;
 }
 
+.logo-up {
+padding-top: 25px;
+padding-bottom: 25px;
+margin-right: 93px;
+}
+
 
 /* Section main */
 
@@ -145,7 +149,6 @@ text-decoration: none;
 background: #2F303A;
 padding-top: 200px;
 padding-bottom: 200px;
-margin-bottom: 93px;
 }
 
 .section-headline {
@@ -188,7 +191,11 @@ padding: 10px 32px;
 /* Section desc*/
 
 .section-desc {
-/* padding-top: 94px; */
+padding-top: 94px;
+padding-bottom: 94px;
+}
+
+.section-subject {
 padding-bottom: 94px;
 }
 
@@ -198,7 +205,7 @@ gap: 30px;
 }
 
 .list-info {
-width: 370px;
+width: 270px;
 }
 
 .title-desc {
@@ -217,15 +224,6 @@ line-height: 1.71;
 }
 
 /* Section subject*/
-
-/* .subject {
-padding-top: 94px;
-} */
-
-.subject-img {
-display: flex;
-flex-wrap: wrap;
-}
 
 
 .subject > .container {
@@ -262,9 +260,14 @@ box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0p
 border-radius: 0px 0px 4px 4px;
 }
 
+/* .user-picture:nth-child(4) {
+margin-right: 0;
+} */
+
 .user-picture:last-child {
 margin-right: 0;
 }
+
 
 .section-user {
 background: #F5F4FA;
@@ -298,14 +301,19 @@ font-style: normal;
 }
 
 
-.footer-slogan {
+.logo-down {
 display: block;
+padding-top: 60px;
 margin-bottom: 20px;
 }
 
 .footer-adress {
-margin-bottom: 10px;
+display: flex;
+flex-direction: column;
+gap: 9px;
+padding-bottom: 60px;
 }
+
 .maps {
 color: #FFFFFF;
 }
@@ -315,10 +323,6 @@ background-color: #2F303A;
 color: rgba(255, 255, 255, 0.6);
 }
 
-.footer-wide {
-padding-top: 60px;
-padding-bottom: 60px;
-}
 
 .logo-footer {
 color: #FFFFFF;
